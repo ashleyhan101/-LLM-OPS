@@ -35,3 +35,23 @@ python hyperparameter_search.py
 ## Results
 - Training curves: `outputs/plots/training_curves.png`
 - Model checkpoints: `checkpoints/mini_gpt_final.pt`
+
+## Model Checkpoint
+
+Due to the large file size (70MB), the checkpoint is not uploaded to the repository.
+
+### Reproducing Results
+
+To generate the checkpoint, run:
+```bash
+python3 main.py --config config.py
+```
+
+This will automatically train the model and save the checkpoint to `checkpoints/best_model.pt`
+
+### Project Files
+
+- `model.py` - Mini-GPT Model Implementation (Multi-head attention, Transformer blocks)
+- `train.py` - Training loop, checkpoint saving/loading, loss and perplexity logging
+- `src/` - Data processing and utility functions
+- `report-Yazhen.pdf` - Complete project report
